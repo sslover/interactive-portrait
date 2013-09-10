@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sam Slover | Interactive Portrait</title>
+
+<link rel="stylesheet" href="style.css"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<!-- Load Jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Load the Paper.js library -->
+<script type="text/javascript" src="js/paper.js"></script>
+<!-- Load external PaperScript and associate it with myCanvas -->
+<script type="text/paperscript" src="js/main.js" canvas="myCanvas">
+</script>
+
+</head>
+
+<body>
+	<img class="main" id="portrait" src="sam-big.jpg" width="1430" height="820"></img>
+	<div class="menu">
+		<h1>Presenting Sam + Annoyed Cat</h1>
+		<div class="button-holder">
+			<a href="#" id="button">Generate New Portrait</a>
+			<a href="#" id="button2">See Original Photo</a>
+		</div>
+	</div>
+	<canvas id="myCanvas" resize></canvas>
+	<img style="display: none!important;" id="portrait-small" src="sam.jpg" width="612" height="612"></img>
+</body>
+</html>
